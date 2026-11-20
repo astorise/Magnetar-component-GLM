@@ -21,4 +21,4 @@ jobs:
       - name: Install Rust toolchain
         run: rustup toolchain install 1.100.0 --profile minimal
       - name: Test GLM grouped router semantics
-        run: cargo +1.100.0 test --locked --test router_integration
+        run: cargo +1.100.0 test --locked --test router_integration --test pytorch_router_integration
